@@ -11,7 +11,9 @@ class ComparisonIQA:
         self.thresh = thresh
 
     def c_iqa(self, img1, img2):
-        dif = np.mean(img1) - np.mean(img2)
+        ave_img1 = cv2.blur(img1, (9, 9))
+        ave_img2 = cv2.blur(img2, (9, 9))
+        dif = (img1) - (img2)
         return dif < self.thresh
 
 if __name__ == '__main__':
