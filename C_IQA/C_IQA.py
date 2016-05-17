@@ -44,6 +44,6 @@ class ComparisonIQA:
 if __name__ == '__main__':
     CQ_ind = ComparisonIQA()
     img1 = mpimg.imread('plane1.png')*255
-    img2 = mpimg.imread('plane2.png')*255
+    img2 = mpimg.imread('plane.png')*255
     score = CQ_ind.c_iqa(img1, img2)
     print('The quality of image1 based image2 is {}').format(score)
