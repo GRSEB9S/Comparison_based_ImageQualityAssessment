@@ -6,6 +6,7 @@ import numpy as np
 from scipy import signal
 import matplotlib.image as mpimg
 
+
 class ComparisonIQA:
     def __init__(self, thresh=0.12, win_size = 9):
         self.thresh = thresh
